@@ -1,0 +1,22 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "An api to create users and user thoughts",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Colton-Dol/social-network-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Colton Doling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Colton-Dol/social-network-api/issues"
+  },
+  "homepage": "https://github.com/Colton-Dol/social-network-api#readme"
+}

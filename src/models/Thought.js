@@ -1,4 +1,4 @@
-import { Schema, Types } from 'mongoose';
+import { Schema, Types, model } from 'mongoose';
 
 const reactionSchema = new Schema(
     {
@@ -23,7 +23,8 @@ const reactionSchema = new Schema(
     {
         toJSON: {
             getters: true
-        }
+        },
+        id: false
     }
 )
 
@@ -49,7 +50,8 @@ const thoughtSchema = new Schema(
         toJSON: {
             getters: true,
             virtuals: true
-        }
+        },
+        id: false
     }
 )
 

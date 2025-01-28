@@ -1,34 +1,14 @@
 const usernames = [
-    'AbeBabe',
-    'AckAttack',
-    'AddMe1',
     'BluChez',
-    'BlissfulIrony',
-    'BigMack',
-    'ClamBam',
     'CluelessMule',
     'CampMeister',
     'DizzyIzzy',
     'DonutWarrior',
-    'DragonWagon',
-    'Eggcited',
-    'ElephantFrenzy',
-    'EmberInSeptember',
     'FranticFran',
-    'FabulousBeyondCompare',
-    'FourForever',
     'GopherGolfer',
-    'GamGam',
-    'GlueSue',
     'HairyHarry',
-    'HeatSeeker',
-    'HarpyLover',
     'IttyBitty',
-    'IronStomach',
-    'IceMaster',
-    'JumboFry',
-    'JumpStump',
-    'JailMe'
+    'JumboFry'
 ];
 
 const thoughts = [
@@ -63,7 +43,7 @@ const getRandomThought = (number) => {
     for (let i = 0; i < number; i++) {
         results.push({
             thoughtText: getRandomItem(thoughts),
-            username: getRandomUsername(),
+            username: usernames[i],
             reactions: [...getRandomReactions(3)]
         });
     }
@@ -81,4 +61,4 @@ const getRandomReactions = (number) => {
     return results;
 };
 
-export { getRandomUsername, getRandomThought, getRandomReactions };
+export { usernames, getRandomUsername, getRandomThought };
